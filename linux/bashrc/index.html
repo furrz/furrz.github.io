@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>linux | nova</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+  </head>
+  <body>
+    <div class="nav">
+      <a href="/">home</a><br/>
+      <a href="/code">code</a><br/>
+      <a href="/linux">linux</a><br/>
+      <a href="http://twitter.com/soaproap">twitter</a><br/>
+    </div>
+    <p>
+      <b>nova's bash prompt</b>
+    </p>
+    <p>
+      My bash prompt is very minimalist:
+      <pre>PROMPT_COLOR_ROOT="\033[31m"
+PROMPT_COLOR_USER="\033[34m"
+
+if [[ "$EUID" -ne 0 ]]; then
+	PROMPT_COLOR=$PROMPT_COLOR_USER
+else
+	PROMPT_COLOR=$PROMPT_COLOR_ROOT
+fi
+
+PS1="\n $PROMPT_COLORλ\033[0m "</pre>
+      This instruction creates a single lambda symbol λ.
+      It is coloured blue for a regular user, and red for root.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+* { box-sizing: border-box; }
+body {
+  font-family: 'Source Code Pro', monospace;
+  margin: 5em 5em 5em 10em;
+  font-size: 11pt;
+  max-width: 600px;
+  line-height: 1.7;
+}
+ul {
+  list-style: none;
+}
+p {
+  margin: 2em 0;
+}
+a {
+  color: #0244ef;
+  text-decoration: none;
+  border-bottom: 1px solid #0244ef;
+}
+.nav {
+  position: fixed;
+  left: 1em;
+  top: 5em;
+  width: 8em;
+}
+.nav a {
+  display: inline-block;
+  margin-bottom: 1.5em;
+}
+pre {
+  padding: 1em 2em;
+  font-size: 10pt;
+  background: #000;
+  color: #fff;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>email-hide | nova</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+  </head>
+  <body>
+    <div class="nav">
+      <a href="/">home</a><br/>
+      <a href="/code">code</a><br/>
+      <a href="/linux">linux</a><br/>
+      <a href="http://twitter.com/soaproap">twitter</a><br/>
+    </div>
+    <p>
+      <b>email-hide</b>
+    </p>
+    <p>
+      Email-hide is a simple solution to <a href="https://en.wikipedia.org/wiki/Email_address_harvesting">Email Address Harvesting</a>.
+    </p>
+    <p>
+      Many spammers run harvesting bots, which scour the web for any email
+      addresses they can find. Once they have found your address, you will
+      they might use it to send you unpleasant spam emails, or they may sell
+      your address to other spammers who will then spam you mercilessly.
+    </p>
+    <p>
+      A common solution to this problem is to type addresses like so:
+      <ul>
+        <li>jsmith (@) example (.) com</li>
+      </ul>
+    </p>
+    <p>
+      The problem with this solution is clear: it is ugly, and it prevents
+      users from copying and pasting the address easily. It might not even be
+      immediately clear to some users that this is an address!
+    </p>
+    <p>
+      But email-hide provides a solution:
+    </p>
+    <p>
+      With email-hide, you can type your email addresses like so:
+      <ul>
+        <li>&lt;span class='email-hide'&gt;jsmith (@) example (.) com&lt;/span&gt;</li>
+      </ul>
+    </p>
+    <p>
+      Email-hide will automatically find this address once the page has loaded,
+      and reformat the address to look like a regular email address!
+      Simple, right?
+    </p>
+    <p>
+      Email-hide even has formatting for mailto links.
+      Type the link with (@) and (.) formatting, and add the class
+      'email-hide-mailto' to the link.
+    </p>
+    <p>
+      To include email-hide in your page, simply add the following line to the
+      end of your HTML content:
+      <ul>
+        <li>&lt;script src="https://furrz.github.io/code/email-hide/email-hide.js"&gt;&lt;/script&gt;</li>
+      </ul>
+    </p>
+  </body>
+</html>
